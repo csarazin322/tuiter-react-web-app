@@ -19,6 +19,7 @@
     width: 126px;
     text-decoration: none;
     color: #6e767d;
+    font-size: 12px;
 }
 
 div.wd-post-options {
@@ -119,7 +120,7 @@ p.wd-post-subtext {
     margin-bottom: 12px;
 }
 
-p.red-subtext {
+.red-subtext {
     color: #FA5252;
 }
 
