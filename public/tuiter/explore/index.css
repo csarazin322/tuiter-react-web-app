@@ -12,6 +12,8 @@
 }
 
 .wd-search-input {
+    position: relative;
+    left: -20px;
     border: none;
     background: darkgray;
     width: 90%;
@@ -26,9 +28,24 @@
     color: gray;
 }
 
-.wd-search-icon {
+.wd-nav-bar {
+    margin-top: 8px;
+    margin-right: 12px;
+}
+
+.wd-settings-icon {
+    margin-top: 4px;
     height: 24px;
     width: 24px;
+    z-index: 2;
+}
+
+.wd-search-icon {
+    height: 20px;
+    width: 20px;
+    position: relative;
+    top: 6px;
+    left: 10px;
     z-index: 2;
 }
 
@@ -105,7 +122,7 @@ hr {
     border: 1px solid #777777;
 }
 
-a {
+.wd-nav-buttons {
     text-decoration: none;
     color: #6e767d;
     margin-left: 16px;
