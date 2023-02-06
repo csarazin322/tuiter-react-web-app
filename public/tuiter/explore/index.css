@@ -1,5 +1,5 @@
 * {
-    font-family: Arial
+    font-family: Arial, serif;
 }
 
 .wd-row {
@@ -106,7 +106,6 @@ p.wd-inline-padded {
     height: 100px;
     width: 100px;
     border-radius: 10px;
-
 }
 
 .wd-icon {
@@ -116,10 +115,6 @@ p.wd-inline-padded {
 
 body {
     background: #000000;
-}
-
-hr {
-    border: 1px solid #777777;
 }
 
 .wd-nav-buttons {

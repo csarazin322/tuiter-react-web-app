@@ -1,0 +1,149 @@
+* {
+    font-family: Arial, serif;
+}
+
+.wd-row {
+    border: 1px solid #2f3336;
+    margin: 0px;
+}
+
+.wd-row-item {
+    margin: 16px;
+}
+
+.wd-grid-row {
+    clear: both;
+}
+
+.wd-quarter {
+    width: 126px;
+    text-decoration: none;
+    color: #6e767d;
+}
+
+div.wd-post-options {
+    margin-top: 12px;
+    width: 506px;
+}
+
+div.wd-account-pic-col {
+    float: left;
+    width: 48px;
+    margin-left: 16px;
+    margin-top: 12px;
+}
+
+div.wd-content-col {
+    float: left;
+    margin: 12px;
+    /*max-width: 506px;*/
+}
+
+div.wd-post-description {
+    max-width: 478px;
+    margin: 0px;
+    border: 1px solid #2f3336;
+    border-radius: 0px 0px 15px 15px;
+    padding: 12px;
+}
+
+
+img.wd-account-pic {
+    height: 48px;
+    width: 48px;
+    border-radius: 24px;
+}
+
+img.wd-post-image {
+    border-radius: 15px 15px 0px 0px;
+    height: 264px;
+    width: 504px;
+    object-fit: cover;
+    margin-bottom: 0px;
+}
+
+.wd-float-right {
+    float: right;
+}
+
+.wd-float-done {
+    clear: both;
+}
+
+p.wd-page-name {
+    margin-bottom: 2px;
+    margin-top: 12px;
+    margin-left: 16px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+p.wd-account-name {
+    color: #ffffff;
+    font-size: 15px;
+    margin-top: 0px;
+    font-weight: bold;
+}
+
+p.wd-subtext {
+    color: #6e767d;
+    font-size: 15px;
+    margin-top: 0px;
+    margin-bottom: 12px;
+}
+
+p.wd-owner-handle {
+    margin-top: 2px;
+    margin-left: 16px;
+}
+
+p.wd-post-text {
+    color: #ffffff;
+    font-size: 15px;
+    max-width: 506px;
+    margin: 0px 0px 12px;
+}
+
+p.wd-post-title {
+    color: #ffffff;
+    font-size: 15px;
+    margin-top: 0px;
+    font-weight: bold;
+}
+
+p.wd-post-subtext {
+    color: #6e767d;
+    font-size: 15px;
+    margin-top: 0px;
+    margin-bottom: 12px;
+}
+
+p.red-subtext {
+    color: #FA5252;
+}
+
+p.wd-inline-padded {
+    padding-left: 4px;
+}
+
+div.wd-inline-text {
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.wd-icon {
+    width: 10px;
+    height: 10px;
+    margin-right: 12px;
+}
+
+.wd-post-icon {
+    width: 12px;
+    height: 12px;
+    margin-right: 12px;
+}
+
+body {
+    background: #000000;
+}
