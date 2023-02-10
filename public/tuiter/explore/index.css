@@ -1,128 +1,66 @@
-* {
-    font-family: Arial, serif;
+
+.wd-w-85 {
+    width: 85%;
 }
 
-.wd-row {
-    border: 1px solid #2f3336;
-    margin: 0px;
+.wd-w-15 {
+    width: 15%;
 }
 
-.wd-row-item {
-    margin: 16px;
+button.wd-follow-button {
+    width: 72px;
+    height: 42px;
 }
 
-.wd-search-input {
-    position: relative;
-    left: -20px;
-    border: none;
-    background: darkgray;
-    width: 90%;
-    height: 20px;
-    border-radius: 10px;
-    text-indent: 30px;
-    color: white;
-    z-index: 1;
+.wd-account-pic {
+    width: 40px;
+    height: 40px
 }
 
-::placeholder {
-    color: gray;
-}
-
-.wd-nav-bar {
-    margin-top: 8px;
-    margin-right: 12px;
-}
-
-.wd-settings-icon {
-    margin-top: 4px;
-    height: 24px;
-    width: 24px;
-    z-index: 2;
+.wd-rounded {
+    border-radius: 100px;
 }
 
 .wd-search-icon {
-    height: 20px;
-    width: 20px;
-    position: relative;
-    top: 6px;
-    left: 10px;
-    z-index: 2;
+    background: white;
+    border-right: none;
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
 }
 
-.wd-selected-link {
-    color: #1da1f2;
-    border-bottom: 3px solid #1da1f2;
+.wd-search-bar {
+    border-left: none;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    width: 50%;
 }
 
-p.wd-subtext {
-    margin-bottom: 2px;
-    margin-top: 2px;
-    color: #6e767d;
-    font-size: 13px;
-}
-
-p.wd-title-text {
-    margin-bottom: 2px;
-    margin-top: 2px;
-    color: #ffffff;
-    font-size: 15px;
-}
-
-p.wd-account-name {
-    margin-bottom: 2px;
-    margin-top: 2px;
-    font-size: 13px;
+.wd-text-over-image {
+    color: white;
     font-weight: bold;
-    color: #ffffff;
+    font-size: 30px;
+    margin-top: -45px;
+    margin-bottom: 0px;
 }
 
-p.wd-content-text {
-    margin-bottom: 2px;
-    margin-top: 2px;
-    color: #ffffff;
-    font-size: 15px;
+.wd-info-text {
+    font-size: 12px;
+    color: #7a7a7a;
+    margin-bottom: 0px
 }
 
-p.wd-inline-padded {
-    padding-left: 4px;
+.wd-account-name {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 0px
 }
 
-.wd-inline-text {
-    display: inline-flex;
-    justify-content: space-between;
+.wd-post-text {
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 0px
 }
 
-.wd-float-right {
-    float: right;
-}
-
-.wd-float-done {
-    clear: both;
-}
-
-
-.wd-tuit-image {
-    object-fit: cover;
-    height: 100px;
-    width: 100px;
-    border-radius: 10px;
-}
-
-.wd-icon {
-    width: 10px;
-    height: 10px;
-}
-
-body {
-    background: #000000;
-}
-
-.wd-nav-buttons {
-    text-decoration: none;
-    color: #6e767d;
-    margin-left: 16px;
-    margin-right: 16px;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    font-size: 15px;
+.wd-primary-color {
+    color: #316cf4;
 }

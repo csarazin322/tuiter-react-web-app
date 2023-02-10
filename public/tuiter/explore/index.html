@@ -3,100 +3,194 @@
 <head>
     <meta charset="UTF-8">
     <title>Explore</title>
+    <link rel="stylesheet" href="../../vendors/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../vendors/fontawesome/css/all.css">
     <link href="index.css" rel="stylesheet"/>
 </head>
 <body>
 
-<div class="wd-row">
-    <div class="wd-row-item wd-nav-bar">
-        <img class="wd-search-icon" src="resources/search-icon.png"/>
-        <input class="wd-search-input" type="text" placeholder="Search Tuiter"/>
-        <a href="explore-settings.html">
-            <img class="wd-float-right wd-settings-icon" src="resources/settings-icon.png"/>
-        </a>
-        <div class="wd-float-done"></div>
-    </div>
+<br>
 
-    <div class="wd-row-item">
-        <a class="wd-nav-buttons wd-selected-link" href="#">For you</a>
-        <a class="wd-nav-buttons" href="trending.html">Trending</a>
-        <a class="wd-nav-buttons" href="covid.html">COVID-19</a>
-        <a class="wd-nav-buttons" href="news.html">News</a>
-        <a class="wd-nav-buttons" href="sports.html">Sports</a>
-        <a class="wd-nav-buttons" href="entertainment.html">Entertainment</a>
-    </div>
-</div>
+<div class="container">
 
+    <div class="row">
 
-<div class="wd-row">
-    <div class="wd-row-item">
-        <p class="wd-subtext">Trending in Science</p>
-        <img class="wd-icon wd-float-right" src="resources/more.png"/>
-        <p class="wd-title-text">Starship</p>
-        <p class="wd-subtext">55.5K Tuits</p>
-        <div class="wd-float-done"></div>
-    </div>
-</div>
+        <div class="col-2">
+            <div class="list-group">
+                <a class="list-group-item list-group-item-action" href="#">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a class="list-group-item list-group-item-action" href="../home.html">
+                    <i class="fa fa-home"></i>
+                    <p class="d-none d-xl-inline-block mb-0">Home</p>
+                </a>
+                <a class="list-group-item list-group-item-action active" href="#">
+                    <i class="fa fa-hashtag"></i>
+                    <p class="d-none d-xl-inline-block mb-0">Explore</p>
+                </a>
+                <a class="list-group-item list-group-item-action" href="../notifications.html">
+                    <i class="fa fa-bell"></i>
+                    <p class="d-none d-xl-inline-block mb-0">Notifications</p>
+                </a>
+                <a class="list-group-item list-group-item-action" href="../mail.html">
+                    <i class="fa fa-envelope"></i>
+                    <p class="d-none d-xl-inline-block mb-0">Mail</p>
+                </a>
+                <a class="list-group-item list-group-item-action" href="../bookmarks.html">
+                    <i class="fa fa-bookmark"></i>
+                    <p class="d-none d-xl-inline-block mb-0">Bookmarks</p>
+                </a>
+                <a class="list-group-item list-group-item-action" href="../lists.html">
+                    <i class="fa fa-list"></i>
+                    <p class="d-none d-xl-inline-block mb-0">Lists</p>
+                </a>
+                <a class="list-group-item list-group-item-action" href="../profile.html">
+                    <i class="fa fa-user"></i>
+                    <p class="d-none d-xl-inline-block mb-0">Profile</p>
+                </a>
+                <a class="list-group-item list-group-item-action" href="../more.html">
+                    <i class="fa-solid fa-ellipsis-h"></i>
+                    <p class="d-none d-xl-inline-block mb-0">More</p>
 
-<div class="wd-row">
-    <div class="wd-row-item">
-        <p class="wd-subtext">Sports - Trending</p>
-        <img class="wd-icon wd-float-right" src="resources/more.png"/>
-        <p class="wd-title-text">Joe Rogan</p>
-        <p class="wd-subtext">5,283 Tuits</p>
-        <div class="wd-float-done"></div>
-    </div>
-</div>
-
-<div class="wd-row">
-    <div class="wd-row-item">
-        <div class="wd-inline-text">
-            <p class="wd-account-name">The New York Times</p>
-            <p class="wd-subtext wd-inline-padded"> - Yesterday</p>
+                </a>
+            </div>
+            <a class="btn btn-primary w-100 mt-2 wd-rounded" href="../tuit.html">
+                Tuit
+            </a>
         </div>
-        <img class="wd-tuit-image wd-float-right" src="resources/cuomo.webp"/>
-        <p class="wd-content-text">
-            CNN's Cuomo conundrum: A star anchor with a brother in trouble
-        </p>
-        <div class="wd-float-done"></div>
-    </div>
-</div>
 
-<div class="wd-row">
-    <div class="wd-row-item">
-        <img class="wd-tuit-image wd-float-right" src="resources/mass.svg"/>
-        <p class="wd-subtext">COVID-19 - LIVE</p>
-        <p class="wd-content-text">
-            COVID-19: News and updates for Massachusetts
-        </p>
-        <div class="wd-float-done"></div>
-    </div>
-</div>
+        <div class="col-7 d-inline-block">
+            <div class="row align-items-center mb-2">
+                <div class="input-group wd-w-85">
+                    <i class="input-group-text fa fa-search pt-3 pb-3 wd-search-icon"></i>
+                    <input class="form-control wd-search-bar" placeholder="Search" type="text"/>
+                </div>
+                <div class="wd-w-15 d-inline-block">
+                    <i class="wd-primary-color fa fa-cog fa-2x"></i>
+                </div>
+            </div>
+            <div class="row ms-0 me-0 mt-2 mb-2">
+                <ul class="nav nav-tabs">
+                    <li class="nav-link active">For you</li>
+                    <li class="nav-link">Trending</li>
+                    <li class="nav-link">News</li>
+                    <li class="nav-link">Sports</li>
+                    <li class="nav-link">Entertainment</li>
+                </ul>
+            </div>
+            <div class="row card ms-0 me-0 mt-2 mb-2">
+                <img class="card-img-top p-0" src="resources/starship.webp">
+                <p class="wd-text-over-image">SpaceX's Starship</p>
+                <div class="card-body p-2 d-inline-flex align-items-center">
+                    <div class="w-75">
+                        <p class="card-text wd-info-text">Web Developent</p>
+                        <p class="card-text wd-account-name">ReactJS</p>
+                        <p class="card-text wd-post-text">
+                            React.js is a component based front end library that makes it very easy to build Single Page
+                            Applications, or SPAs
+                        </p>
+                    </div>
+                    <div class="w-25">
+                        <img class=" ps-4 pe-4 w-100 rounded float-right" src="resources/react.png">
+                    </div>
+                </div>
 
-<div class="wd-row">
-    <div class="wd-row-item">
-        <div class="wd-inline-text">
-            <p class="wd-account-name">Bloomberg Opinion</p>
-            <p class="wd-subtext wd-inline-padded"> - Yesterday</p>
+                <div class="card-body p-2 d-inline-flex border-top align-items-center">
+                    <div class="w-75">
+                        <p class="card-text wd-account-name d-inline-flex">JavaScript</p>
+                        <i class="d-inline-flex fa fa-sm fa-check-circle"></i>
+                        <p class="card-text wd-info-text d-inline-flex">- 2h</p>
+                        <p class="card-text wd-post-text">
+                            JavaScript is a programming language that can run on browsers as well as desktops
+                        </p>
+                        <p class="card-text wd-info-text">123K Tuits</p>
+                    </div>
+                    <div class="w-25">
+                        <img class=" ps-4 pe-4 w-100 rounded float-right" src="resources/js.png">
+                    </div>
+                </div>
+
+                <div class="card-body p-2 d-inline-flex border-top align-items-center">
+                    <div class="w-75">
+                        <p class="card-text wd-info-text">Web Development</p>
+                        <p class="card-text wd-account-name d-inline-flex">jQuery</p>
+                        <p class="card-text wd-info-text">123K Tuits</p>
+                    </div>
+                    <div class="w-25">
+                        <img class=" ps-4 pe-4 w-100 rounded float-right" src="resources/jquery.gif">
+                    </div>
+                </div>
+
+                <div class="card-body p-2 d-inline-flex border-top align-items-center">
+                    <div class="w-75">
+                        <p class="card-text wd-info-text">Web Development</p>
+                        <p class="card-text wd-account-name d-inline-flex">NodeJS</p>
+                        <i class="d-inline-flex fa fa-sm fa-check-circle"></i>
+                        <p class="card-text wd-info-text d-inline-flex">- 2h</p>
+                        <p class="card-text wd-info-text">123K Tuits</p>
+                    </div>
+                    <div class="w-25">
+                        <img class=" ps-4 pe-4 w-100 rounded float-right" src="resources/nodejs.webp">
+                    </div>
+                </div>
+            </div>
+
         </div>
-        <img class="wd-tuit-image wd-float-right" src="resources/covid.jpg"/>
-        <p class="wd-content-text">
-            Thinking about getting a booster? Read this first.
-        </p>
-        <div class="wd-float-done"></div>
-    </div>
-</div>
 
-<div class="wd-row">
-    <div class="wd-row-item">
-        <p class="wd-subtext">Trending in the United States</p>
-        <img class="wd-icon wd-float-right" src="resources/more.png"/>
-        <p class="wd-title-text">Wonder Bread</p>
-        <p class="wd-subtext">1,259 Tuits</p>
-        <div class="wd-float-done"></div>
-    </div>
-</div>
+        <div class="col-3">
+            <ul class="list-group">
+                <li class="list-group-item wd-post-text">Who to follow</li>
+                <li class="list-group-item d-inline-flex">
+                    <img class="ms-0 me-1 wd-account-pic rounded-circle" src="resources/java.png">
+                    <div class="">
+                        <p class="d-inline-flex wd-account-name">Java</p>
+                        <i class="fa fa-check-circle fa-sm d-inline-flex"></i>
+                        <p class="wd-info-text">@Java</p>
+                    </div>
+                    <button type="button" class="btn btn-primary wd-follow-button wd-rounded ms-auto">Follow</button>
+                </li>
+                <li class="list-group-item d-inline-flex align-items-center">
+                    <img class="ms-0 me-1 wd-account-pic rounded-circle" src="resources/relativity_space.avif">
+                    <div class="">
+                        <p class="d-inline-flex wd-account-name">Relativity Space</p>
+                        <i class="fa fa-check-circle fa-sm d-inline-flex"></i>
+                        <p class="wd-info-text">@relativityspace</p>
+                    </div>
+                    <button type="button" class="btn btn-primary wd-follow-button wd-rounded ms-auto">Follow</button>
+                </li>
+                <li class="list-group-item d-inline-flex">
+                    <img class="ms-0 me-1 wd-account-pic rounded-circle" src="resources/virgin_galactic.webp">
+                    <div class="">
+                        <p class="d-inline-flex wd-account-name">Virgin Galactic</p>
+                        <i class="fa fa-check-circle fa-sm d-inline-flex"></i>
+                        <p class="wd-info-text">@virgingalactic</p>
+                    </div>
+                    <button type="button" class="btn btn-primary wd-follow-button wd-rounded ms-auto">Follow</button>
+                </li>
+                <li class="list-group-item d-inline-flex">
+                    <img class="ms-0 me-1 wd-account-pic rounded-circle" src="resources/nasa.webp">
+                    <div class="">
+                        <p class="d-inline-flex wd-account-name">NASA</p>
+                        <i class="fa fa-check-circle fa-sm d-inline-flex"></i>
+                        <p class="wd-info-text">@NASA</p>
+                    </div>
+                    <button type="button" class="btn btn-primary wd-follow-button wd-rounded ms-auto">Follow</button>
+                </li>
+                <li class="list-group-item d-inline-flex">
+                    <img class="ms-0 me-1 wd-account-pic rounded-circle" src="resources/tesla.jpg">
+                    <div class="">
+                        <p class="d-inline-flex wd-account-name">Tesla</p>
+                        <i class="fa fa-check-circle fa-sm d-inline-flex"></i>
+                        <p class="wd-info-text">@Tesla</p>
+                    </div>
+                    <button type="button" class="btn btn-primary wd-follow-button wd-rounded ms-auto">Follow</button>
+                </li>
+            </ul>
+        </div>
 
+    </div>
+
+</div>
 
 </body>
 </html>
