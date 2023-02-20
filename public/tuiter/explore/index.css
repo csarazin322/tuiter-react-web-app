@@ -27,6 +27,7 @@ button.wd-follow-button {
 }
 
 .wd-search-icon {
+    color: darkgray;
     border-bottom-left-radius: 50px;
     border-top-left-radius: 50px;
 }
