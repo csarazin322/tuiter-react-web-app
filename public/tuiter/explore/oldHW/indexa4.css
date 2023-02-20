@@ -1,0 +1,61 @@
+
+.wd-w-85 {
+    width: 85%;
+}
+
+.wd-w-15 {
+    width: 15%;
+}
+
+.wd-width-150 {
+    width: 150px;
+}
+
+button.wd-follow-button {
+    width: 60px;
+    height: 35px;
+    font-size: 12px;
+}
+
+.wd-account-pic {
+    width: 35px;
+    height: 35px
+}
+
+.wd-rounded {
+    border-radius: 100px;
+}
+
+.wd-search-icon {
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+}
+
+.wd-search-bar {
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.wd-info-text {
+    font-size: 12px;
+}
+
+.wd-info-text-2 {
+    font-size: 10px;
+}
+
+.wd-account-name {
+    font-size: 14px;
+}
+
+.wd-account-name-2 {
+    font-size: 12px;
+}
+
+.wd-post-text {
+    font-size: 12px;
+}
+
+.wd-primary-color {
+    color: #316cf4;
+}
