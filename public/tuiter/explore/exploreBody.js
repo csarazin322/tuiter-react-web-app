@@ -1,4 +1,4 @@
-import postSummaryList from "../postSummaryList";
+import postSummaryList from "../postSummaryList/index.js";
 
 const exploreBody = () => {
     return (`
