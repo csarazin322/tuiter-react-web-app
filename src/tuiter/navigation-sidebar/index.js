@@ -1,46 +1,49 @@
 import React from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { updateActivePath } from "../reducers/nav-reducer";
 
-const NavigationSidebar = (
-    {
-        active = 'explore'
-    }
-) => {
+const NavigationSidebar = () => {
+    const activeNav = useSelector(state => state.activeNav.active);
+    const dispatch = useDispatch();
+    const changeActiveNav = (newActive) => { dispatch(updateActivePath(newActive)) };
     return (
         <div className="list-group">
-            <a className="list-group-item">Tuiter</a>
-            <a className={`list-group-item
-                    ${active === 'home' ? 'active' : ''}`}>
+            <button className="list-group-item">Tuiter</button>
+            <button className={`list-group-item
+                    ${activeNav === 'home' ? 'active' : ''}`} onClick={() => changeActiveNav('home')}>
                 Home
-            </a>
-            <a className={`list-group-item
-                    ${active === 'explore' ? 'active' : ''}`}>
+            </button>
+            <button className={`list-group-item
+                    ${activeNav === 'explore' ? 'active' : ''}`}
+                onClick={() => changeActiveNav('explore')}>
                 Explore
-            </a>
-            <a className={`list-group-item
-                    ${active === 'notifications' ? 'active' : ''}`}>
+            </button>
+            <button className={`list-group-item
+                    ${activeNav === 'notifications' ? 'active' : ''}`}>
                 Notifications
-            </a>
-            <a className={`list-group-item
-                    ${active === 'messages' ? 'active' : ''}`}>
+            </button>
+            <button className={`list-group-item
+                    ${activeNav === 'messages' ? 'active' : ''}`}>
                 Messages
-            </a>
-            <a className={`list-group-item
-                    ${active === 'bookmarks' ? 'active' : ''}`}>
+            </button>
+            <button className={`list-group-item
+                    ${activeNav === 'bookmarks' ? 'active' : ''}`}>
                 Bookmarks
-            </a>
-            <a className={`list-group-item
-                    ${active === 'lists' ? 'active' : ''}`}>
+            </button>
+            <button className={`list-group-item
+                    ${activeNav === 'lists' ? 'active' : ''}`}>
                 Lists
-            </a>
-            <a className={`list-group-item
-                    ${active === 'profile' ? 'active' : ''}`}>
+            </button>
+            <button className={`list-group-item
+                    ${activeNav === 'profile' ? 'active' : ''}`}>
                 Profile
-            </a>
-            <a className={`list-group-item
-                    ${active === 'more' ? 'active' : ''}`}>
+            </button>
+            <button className={`list-group-item
+                    ${activeNav === 'more' ? 'active' : ''}`}>
                 More
-            </a>
+            </button>
         </div>
     );
 };
+
 export default NavigationSidebar;
