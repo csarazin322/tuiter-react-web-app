@@ -7,8 +7,10 @@ const WhatsHappening = () => {
     let [whatsHappening, setWhatsHappening] = useState('');
     const dispatch = useDispatch();
     const tuitClickHandler = () => {
+        const title = (whatsHappening.length > 25 ? whatsHappening.substring(0, 25) + "..." : whatsHappening)
         const newTuit = {
             ...baseTuit,
+            title: title,
             tuit: whatsHappening
         }
         dispatch(createTuitThunk(newTuit));

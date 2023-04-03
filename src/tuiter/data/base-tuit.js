@@ -2,7 +2,7 @@ const baseTuit = {
     "_id": 234,
     "topic": "NASA",
     "userName": "NASA",
-    "time": "2h",
+    "time": "0m",
     "title": "100s of Tesla Starships land on Mars after a 6 month journey. 1000s of Martian colonists being building Mars Base 1",
     "image": "nasa.webp",
     "liked": false,
