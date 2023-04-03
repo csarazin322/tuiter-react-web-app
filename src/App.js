@@ -11,7 +11,7 @@ import tuitsReducer from './tuiter/reducers/tuits-reducer';
 import navReducer from './tuiter/reducers/nav-reducer';
 import { configureStore } from '@reduxjs/toolkit';
 const store = configureStore(
-    { reducer: { who: whoReducer, tuits: tuitsReducer, activeNav: navReducer } });
+    { reducer: { who: whoReducer, tuitsData: tuitsReducer, activeNav: navReducer } });
 
 function App() {
     return (

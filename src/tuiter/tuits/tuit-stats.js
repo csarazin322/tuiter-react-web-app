@@ -1,35 +1,47 @@
 import React from "react";
-import { faReply, faRetweet, faShare, faHeart } from "@fortawesome/free-solid-svg-icons";
+import { faReply, faRetweet, faShare, faHeart, faThumbsDown } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useDispatch } from "react-redux";
+import { updateTuitThunk } from "../services/tuits-thunks";
+import baseTuit from "../data/base-tuit";
 
 const TuitStats = (
     {
-        stats = {
-            "liked": false,
-            "replies": 0,
-            "retuits": 0,
-            "likes": 0,
-        }
+        tuit = baseTuit
     }
 ) => {
+    const dispatch = useDispatch()
     return (
         <div>
             < div className="w-25 d-inline-flex" >
                 <FontAwesomeIcon size="lg" className="pe-1" icon={faReply} />
-                <div className="w-25">{stats.replies}</div>
+                <div className="w-25">{tuit.replies}</div>
             </div >
             <div className="w-25 d-inline-flex">
                 <FontAwesomeIcon size="lg" className="pe-1" icon={faRetweet} />
-                <div>{stats.retuits}</div>
+                <div>{tuit.retuits}</div>
             </div>
-            <div className="w-25 d-inline-flex">
-                <FontAwesomeIcon size="lg" className="pe-1" icon={faHeart} style={{ "color": stats.liked ? 'red' : '' }} />
-                <div>{stats.likes}</div>
+            <div className="w-25 d-inline-flex" >
+                <FontAwesomeIcon onClick={() => {
+                    tuit.liked ?
+                        dispatch(updateTuitThunk({ ...tuit, likes: tuit.likes - 1, liked: false }))
+                        : dispatch(updateTuitThunk({ ...tuit, likes: tuit.likes + 1, liked: true }))
+                }} size="lg" className="pe-1" icon={faHeart} style={{ "color": tuit.liked ? 'red' : '' }} />
+                <div>{tuit.likes}</div>
             </div>
             <div className="w-25 d-inline-flex">
                 <FontAwesomeIcon size="lg" className="pe-1" icon={faShare} />
             </div>
-        </div >
+            <div className="w-25 d-inline-flex">
+                <FontAwesomeIcon onClick={() => {
+                    tuit.disliked ?
+                        dispatch(updateTuitThunk({ ...tuit, dislikes: tuit.dislikes - 1, disliked: false }))
+                        : dispatch(updateTuitThunk({ ...tuit, dislikes: tuit.dislikes + 1, disliked: true }))
+                }}
+                    size="lg" className="pe-1" icon={faThumbsDown} style={{ "color": tuit.disliked ? 'red' : '' }} />
+                <div>{tuit.dislikes}</div>
+            </div>
+        </div>
     )
 }
 

@@ -4,36 +4,18 @@ import TuitStats from "./tuit-stats";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
 import { useDispatch } from "react-redux";
-import { deleteTuit } from "../reducers/tuits-reducer";
+import { deleteTuitThunk } from "../services/tuits-thunks";
+import baseTuit from "../data/base-tuit";
 
 
 const TuitItem = (
     {
-        tuit = {
-            "_id": 0,
-            "topic": "Space",
-            "userName": "SpaceX",
-            "time": "2h",
-            "title": "Tesla Cybertruck lands on Mars and picks up the Curiosity rover on its 6' bed",
-            "image": "tesla.jpg",
-            "liked": false,
-            "replies": 0,
-            "retuits": 0,
-            "likes": 0,
-            "handle": "@spacex",
-            "tuit": "default text"
-        }
+        tuit = baseTuit
     }
 ) => {
     const dispatch = useDispatch();
     const deleteTuitHandler = (id) => {
-        dispatch(deleteTuit(id));
-    }
-    const stats = {
-        "liked": tuit.liked,
-        "replies": tuit.replies,
-        "retuits": tuit.retuits,
-        "likes": tuit.likes,
+        dispatch(deleteTuitThunk(id));
     }
     return (
         <li className="list-group-item">
@@ -50,7 +32,7 @@ const TuitItem = (
                         <div className="d-inline">{tuit.handle} - {tuit.time}</div>
                     </div>
                     <div>{tuit.tuit}</div>
-                    <TuitStats stats={stats}></TuitStats>
+                    <TuitStats tuit={tuit}></TuitStats>
                 </div>
             </div>
         </li>
