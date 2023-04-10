@@ -1,5 +1,4 @@
 const baseTuit = {
-    "_id": 234,
     "topic": "NASA",
     "userName": "NASA",
     "time": "0m",
