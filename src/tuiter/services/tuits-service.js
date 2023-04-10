@@ -1,5 +1,5 @@
 import axios from 'axios';
-const TUITS_API = `${process.env.REACT_APP_API_BASE || 'http://localhost:4000/api'}/tuits`
+const TUITS_API = `https://tuiter-a9-pllk.onrender.com/api/tuits`
 
 export const createTuit = async (tuit) => {
     const response = await axios.post(TUITS_API, tuit)
